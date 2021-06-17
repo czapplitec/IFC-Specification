@@ -92,6 +92,82 @@ Scaling is supported to correlate the size of a texture with its physical dimens
 														<DocModelRuleEntity Name="IfcURIReference" />
 													</Rules>
 												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="Mode">
+													<Rules>
+														<DocModelRuleEntity Name="IfcIdentifier" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="TextureTransform">
+													<Rules>
+														<DocModelRuleEntity Name="IfcCartesianTransformationOperator2D">
+															<Rules>
+																<DocModelRuleAttribute Name="Axis1">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcDirection" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Axis2">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcDirection" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="LocalOrigin">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcCartesianPoint">
+																			<Rules>
+																				<DocModelRuleAttribute Name="Coordinates">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcLengthMeasure" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Scale" />
+															</Rules>
+														</DocModelRuleEntity>
+														<DocModelRuleEntity Name="IfcCartesianTransformationOperator2DnonUniform">
+															<Rules>
+																<DocModelRuleAttribute Name="Axis1">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcDirection" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Axis2">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcDirection" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="LocalOrigin">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcCartesianPoint">
+																			<Rules>
+																				<DocModelRuleAttribute Name="Coordinates">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcLengthMeasure" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Scale" />
+																<DocModelRuleAttribute Name="Scale2" />
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="Parameter">
+													<Rules>
+														<DocModelRuleEntity Name="IfcIdentifier" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="URLReference">
+													<Rules>
+														<DocModelRuleEntity Name="IfcURIReference" />
+													</Rules>
+												</DocModelRuleAttribute>
 											</Rules>
 										</DocTemplateDefinition>
 									</References>
